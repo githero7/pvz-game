@@ -120,7 +120,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie],
+	FlagNum: 4,
 	SumToZombie: {
 		1 : 5,
 		"default": 5
@@ -214,7 +214,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie],
+	FlagNum: 20,
 	SumToZombie: {
 		1 : 3,
 		2 : 10,
@@ -336,7 +336,7 @@ oS.Init({
 {
 	//传递给流程控制对象数据
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oNewspaperZombie, oNewspaperZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oNewspaperZombie, oNewspaperZombie],
+	FlagNum: 10,
 	//僵尸波数
 	SumToZombie: {
 		1 : 7,
@@ -391,7 +391,7 @@ oS.Init({
 {
 	//传递给流程控制对象数据
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oBucketheadZombie],
+	FlagNum: 20,
 	//僵尸波数
 	SumToZombie: {
 		1 : 6,
@@ -441,8 +441,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie],
-	SumToZombie: {1: 3, 2: 5, 3: 7, 'default': 7},
+	FlagNum: 10,
+	SumToZombie: {1: 6, 2: 9, 3: 11, 'default': 11},
 	FlagToSumNum: {a1: [3, 5, 9], a2: [1, 2, 3, 20]},
 	FlagToMonitor: {9: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -473,8 +473,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie],
-	SumToZombie: {1: 3, 2: 6, 3: 8, 'default': 8},
+	FlagNum: 20,
+	SumToZombie: {1: 6, 2: 10, 3: 13, 'default': 13},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19], a2: [1, 2, 3, 15, 4, 5, 6, 30]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -510,8 +510,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie],
-	SumToZombie: {1: 3, 2: 6, 3: 8, 'default': 8},
+	FlagNum: 20,
+	SumToZombie: {1: 6, 2: 10, 3: 13, 'default': 13},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19], a2: [1, 2, 3, 15, 4, 5, 6, 30]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -542,8 +542,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie],
-	SumToZombie: {1: 3, 2: 6, 3: 9, 'default': 9},
+	FlagNum: 30,
+	SumToZombie: {1: 5, 2: 10, 3: 14, 'default': 14},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19, 20, 23, 25, 29], a2: [1, 2, 3, 18, 4, 5, 6, 25, 7, 8, 9, 35]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowLargeWave, 0], 29: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -581,8 +581,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie],
-	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie],
-	SumToZombie: {1: 3, 2: 6, 3: 9, 'default': 9},
+	FlagNum: 30,
+	SumToZombie: {1: 5, 2: 10, 3: 15, 'default': 15},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19, 20, 23, 25, 29], a2: [1, 2, 3, 20, 4, 5, 6, 28, 7, 8, 9, 38]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowLargeWave, 0], 29: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -613,8 +613,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie],
-	SumToZombie: {1: 3, 2: 6, 3: 9, 'default': 9},
+	FlagNum: 20,
+	SumToZombie: {1: 6, 2: 10, 3: 14, 'default': 14},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19], a2: [1, 2, 3, 20, 4, 5, 6, 35]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -652,8 +652,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie],
-	SumToZombie: {1: 3, 2: 6, 3: 9, 'default': 9},
+	FlagNum: 30,
+	SumToZombie: {1: 5, 2: 10, 3: 15, 'default': 15},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19, 20, 23, 25, 29], a2: [1, 2, 3, 22, 4, 5, 6, 30, 7, 8, 9, 40]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowLargeWave, 0], 29: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -790,7 +790,7 @@ SetBlock($("dTop"));
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie],
+	FlagNum: 6,
 	SumToZombie: {
 		1 : 10,
 		"default": 10
@@ -835,8 +835,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie, oFootballZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie, oFootballZombie],
-	SumToZombie: {1: 3, 2: 8, 3: 11, 'default': 11},
+	FlagNum: 30,
+	SumToZombie: {1: 5, 2: 11, 3: 15, 'default': 15},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19, 20, 23, 25, 29], a2: [1, 2, 3, 25, 4, 5, 6, 32, 7, 8, 9, 45]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowLargeWave, 0], 29: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -874,8 +874,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie],
-	SumToZombie: {1: 2, 2: 6, 3: 10, 'default': 10},
+	FlagNum: 30,
+	SumToZombie: {1: 4, 2: 10, 3: 15, 'default': 15},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19, 20, 23, 25, 29], a2: [1, 2, 3, 25, 4, 5, 6, 35, 7, 8, 9, 48]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowLargeWave, 0], 29: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -906,8 +906,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie, oFootballZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie, oFootballZombie],
-	SumToZombie: {1: 4, 2: 10, 3: 11, 'default': 11},
+	FlagNum: 30,
+	SumToZombie: {1: 4, 2: 11, 3: 15, 'default': 15},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19, 20, 23, 25, 29], a2: [1, 2, 3, 28, 4, 5, 6, 38, 7, 8, 9, 50]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowLargeWave, 0], 29: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -945,8 +945,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie, oFootballZombie],
-	ArZ: [oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie, oFootballZombie],
-	SumToZombie: {1: 2, 2: 6, 3: 10, 'default': 10},
+	FlagNum: 30,
+	SumToZombie: {1: 3, 2: 10, 3: 15, 'default': 15},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19, 20, 23, 25, 29], a2: [1, 2, 3, 30, 4, 5, 6, 40, 7, 8, 9, 55]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowLargeWave, 0], 29: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -974,8 +974,8 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie, oFootballZombie, oFootballZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oFootballZombie, oFootballZombie, oFootballZombie, oFootballZombie],
-	SumToZombie: {1: 2, 2: 9, 3: 14, 'default': 14},
+	FlagNum: 30,
+	SumToZombie: {1: 3, 2: 10, 3: 15, 'default': 15},
 	FlagToSumNum: {a1: [3, 5, 9, 10, 13, 15, 19, 20, 23, 25, 29], a2: [2, 3, 5, 30, 6, 8, 12, 40, 15, 20, 25, 60]},
 	FlagToMonitor: {9: [ShowLargeWave, 0], 19: [ShowLargeWave, 0], 29: [ShowFinalWave, 0]},
 	FlagToEnd: function() {
@@ -1038,7 +1038,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie],
+	FlagNum: 8,
 	SumToZombie: {
 		1 : 8,
 		"default": 10
@@ -1128,7 +1128,7 @@ SetBlock($("dTop"));
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie],
+	FlagNum: 9,
 	SumToZombie: {
 		1 : 7,
 		2 : 9,
@@ -1255,7 +1255,7 @@ oS.InitLawnMower();
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie],
+	FlagNum: 10,
 	SumToZombie: {
 		1 : 7,
 		2 : 10,
@@ -1300,7 +1300,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie],
+	FlagNum: 9,
 	SumToZombie: {
 		1 : 7,
 		2 : 10,
@@ -1346,7 +1346,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie],
+	FlagNum: 20,
 	SumToZombie: {
 		1 : 7,
 		2 : 10,
@@ -1392,7 +1392,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oBucketheadZombie],
+	FlagNum: 10,
 	SumToZombie: {
 		1 : 7,
 		2 : 9,
@@ -1436,7 +1436,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie],
+	FlagNum: 30,
 	SumToZombie: {
 		1 : 6,
 		2 : 9,
@@ -1505,7 +1505,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oNewspaperZombie, oNewspaperZombie, oNewspaperZombie, oBucketheadZombie, oBucketheadZombie],
+	FlagNum: 30,
 	SumToZombie: {
 		1 : 3,
 		2 : 8,
@@ -1554,7 +1554,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oBucketheadZombie],
+	FlagNum: 30,
 	SumToZombie: {
 		1 : 6,
 		2 : 9,
@@ -1615,7 +1615,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie],
+	FlagNum: 10,
 	SumToZombie: {
 		1 : 2,
 		2 : 11,
@@ -1703,7 +1703,7 @@ oS.InitLawnMower();
 },
 {
 	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie],
-	ArZ: [oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie, oZombie],
+	FlagNum: 1,
 	SumToZombie: {
 		1 : 30,
 		"default": 30
@@ -1769,7 +1769,7 @@ oS.Init({
 },
 {
 	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie],
-	ArZ: [oZombie, oZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oConeheadZombie, oPoleVaultingZombie, oPoleVaultingZombie, oPoleVaultingZombie, oPoleVaultingZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie, oBucketheadZombie],
+	FlagNum: 20,
 	SumToZombie: {
 		1 : 2,
 		2 : 11,

@@ -400,7 +400,7 @@ oP = {
 		e = h.SumToZombie,
 		b = !f ? 150 : (f.style.top = "5px", --d, c[a++] = oFlagZombie, 30);
 		while (d > 0) {
-			d -= (c[a++] = g[Math.floor(Math.random() * $SEql(d, e))]).prototype.Lvl
+			d -= (c[a++] = g[Math.floor(Math.random() * Math.min($SEql(d, e), g.length - 1))]).prototype.Lvl
 		}
 		h.NumZombies += a;
 		h.SetTimeoutZombie(c, b)
