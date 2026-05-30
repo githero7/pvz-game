@@ -1902,7 +1902,6 @@ oSnowPea = InheritO(oPeashooter, {
 	EName: "oSnowPea",
 	CName: "寒冰射手",
 	SunNum: 125,
-	beAttackedPointL: 2000000000000000000000000000000000000000000000,
 	coolTime: 10000,
 	BKind: -1,
 	PicArr: ["assets/img/cards/SnowPea.png", "assets/img/cards/SnowPeaG.png", "assets/img/plants/SnowPea/SnowPea.gif", "assets/img/plants/PB-10.gif", "assets/img/plants/PeaBulletHit.gif"],
