@@ -2683,7 +2683,7 @@ oChomper = InheritO(CPlants, {
 	height: 114,
 	beAttackedPointR: 70,
 	SunNum: 150,
-	HP:2000,
+	HP:3000,
 	PicArr: ["assets/img/cards/Chomper.png", "assets/img/cards/ChomperG.png", "assets/img/plants/Chomper/Chomper.gif", "assets/img/plants/Chomper/ChomperAttack.gif", "assets/img/plants/Chomper/ChomperDigest.gif"],
 	Tooltip: "能一口气吞下一只僵尸, 但处于咀嚼状态中十分脆弱",
 	Produce: '大嘴花可以一口吞掉一整只僵尸，但是他们消化僵尸的时候很脆弱。<p>伤害：<font color="#FF0000">巨大</font><br>范围：<font color="#FF0000">非常近</font><br>特点：<font color="#FF0000">消化时间很长</font></p>大嘴花几乎可以去“恐怖小店”，来表演它的绝技了，不过他的经纪人压榨了他太多的钱，所以他没去成。尽管如此，大嘴花没有怨言，只说了句这只是交易的一部分。',
@@ -2694,7 +2694,7 @@ oChomper = InheritO(CPlants, {
 		return "top:" + (a.height - 22) + "px"
 	},
 	getTriggerRange: function(a, b, c) {
-		return [[this.pixelLeft, c + 80, 0]]
+		return [[this.pixelLeft, Math.min(c + 240, 900), 0]]
 	},
 	TriggerCheck: function(a) {
 		this.AttackCheck2(a) && (this.canTrigger = 0, this.NormalAttack(this.id, a.id))
@@ -2733,7 +2733,7 @@ oFumeShroom = InheritO(CPlants, {
 	width: 100,
 	height: 88,
 	beAttackedPointR: 80,
-	SunNum: 75,
+	SunNum: 200,
 	SleepGif: 3,
 	PicArr: ["assets/img/cards/FumeShroom.png", "assets/img/cards/FumeShroomG.png", "assets/img/plants/FumeShroom/FumeShroom.gif", "assets/img/plants/FumeShroom/FumeShroomSleep.gif", "assets/img/plants/FumeShroom/FumeShroomAttack.gif", "assets/img/plants/FumeShroom/FumeShroomBullet.gif"],
 	Tooltip: "喷射可以穿过门板的气液",
@@ -2769,7 +2769,7 @@ oFumeShroom = InheritO(CPlants, {
 		c = f.id,
 		b = $(c),
 		a = c + "_Bullet";
-		while (e--) { (g = d[e]).Altitude < 2 && g.getHurt(0, 0, 20, 0, 0, 0, 0)
+		while (e--) { (g = d[e]).Altitude < 2 && g.getHurt(0, 0, 300, 0, 0, 0, 0)
 		}
 		b.childNodes[1].src = "assets/img/plants/FumeShroom/FumeShroomAttack.gif";
 		SetBlock($(a));
